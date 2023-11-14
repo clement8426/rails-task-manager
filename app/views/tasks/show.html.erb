@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>My tasks</h1>
+  <div>
+    <ul class="list-group" >
+        <li class="list-group-item">
+          <p><%= @task.details %></p>
+          <input type="checkbox" id="scales" name="scales" <% if @task.completed %>checked<% end %> />
+          <label for="task"><%= @task.title %></label>
+        </li>
+    </ul>
+    <%= link_to  "Bast to list", tasks_path%>
+  </div>
+</div>
